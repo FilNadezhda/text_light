@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sriracha', cursive;
+  background: #000;
+  height: 100vh;
+}
+
+h1 {
+	color: #111;
+	font-size: 10em;
+}
+
+h1 span {
+	display: inline-block;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	animation: animate 2s linear infinite;
+}
+
+h1 span:nth-child(1)
+{
+	animation-delay: 0s;
+}
+
+h1 span:nth-child(2)
+{
+	animation-delay: 0.25s;
+}
+
+h1 span:nth-child(3)
+{
+	animation-delay: 0.5s;
+}
+
+h1 span:nth-child(4)
+{
+	animation-delay: 0.75s;
+}
+
+h1 span:nth-child(5)
+{
+	animation-delay: 1s;
+}
+
+h1 span:nth-child(6)
+{
+	animation-delay: 1.25s;
+}
+
+@keyframes animate
+{
+	0%, 100%
+	{
+		color:#fff;
+		filter: blur(2px);
+		text-shadow: 0 0 10px rgb(239, 243, 2);
+		text-shadow: 0 0 20px rgb(239, 243, 2);
+		text-shadow: 0 0 40px rgb(239, 243, 2);
+		text-shadow: 0 0 80px rgb(239, 243, 2);
+		text-shadow: 0 0 120px rgb(239, 243, 2);
+		text-shadow: 0 0 200px rgb(239, 243, 2);
+	}
+	5%, 95%
+	{
+		color:#111;
+		filter: blur(0px);
+		text-shadow: none;
+	}
+}
